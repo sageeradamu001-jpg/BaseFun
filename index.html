@@ -108,7 +108,9 @@
         const transactionResult = document.getElementById('transactionResult');
 
         // Solana Connection
-        const connection = new solanaWeb3.Connection(
+        const connection = new solanaWeb3.Connection('https://api.mainnet-beta.solana.com', // Or your preferred RPC endpoint
+    'confirmed'
+);
             solanaWeb3.clusterApiUrl('mainnet-beta'), // Change to 'mainnet-beta' for mainnet
             'confirmed'
         );
